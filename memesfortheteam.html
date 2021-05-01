@@ -41,24 +41,23 @@
         <footer id="footer"><button id="btn">DARK/LIGHT MODE</button></footer> 
         <script>
             let clicked = false;
-            if(clicked==false){
-                document.getElementById("btn").addEventListener("click", ()=>{
+            document.getElementById("btn").addEventListener("click", ()=>{
+                if(clicked==false){
                     document.getElementById("body").style.backgroundColor = "black";
                     document.getElementById("h1").style.color = "white";
                     document.getElementById("btn").style.backgroundColor = "black";
                     document.getElementById("btn").style.color = "white";
                     clicked = true;
-                })
-            }
-            if(clicked==true){
-                document.getElementById("btn").addEventListener("click", ()=>{
+                }else{
+                    //document.getElementById("btn").addEventListener("click", ()=>{
                     document.getElementById("body").style.backgroundColor = "white";
                     document.getElementById("h1").style.color = "black";
                     document.getElementById("btn").style.backgroundColor = "white";
                     document.getElementById("btn").style.color = "black";
                     clicked = false;
-                })
-            }
+                    //})
+                }
+            });
         </script>
     </body>
 </html>
