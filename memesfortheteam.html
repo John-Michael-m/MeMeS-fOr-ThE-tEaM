@@ -31,10 +31,14 @@
                 background-color: black;
                 color: white;
             }
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
         </style>
     </head>
     <body id="body">
-        <h1 id="h1"><center>MEMES FOR THE TEAM DOT COM</center></h1>
+        <h1 id="h1"><center><a href="memesfortheteam.html">MEMES FOR THE TEAM DOT COM</a></center></h1>
         <div id = "banner">
             <h2>CORONA TIME</h2><h2>DANK MEMES</h2><h2>EMO MEMES</h2><h2>BATMAN MEMES</h2><h2>BIG BRAIN MEMES</h2><h2>CALCULUS MEMES</h2>
         </div>
@@ -49,13 +53,11 @@
                     document.getElementById("btn").style.color = "white";
                     clicked = true;
                 }else{
-                    //document.getElementById("btn").addEventListener("click", ()=>{
                     document.getElementById("body").style.backgroundColor = "white";
                     document.getElementById("h1").style.color = "black";
                     document.getElementById("btn").style.backgroundColor = "white";
                     document.getElementById("btn").style.color = "black";
                     clicked = false;
-                    //})
                 }
             });
         </script>
